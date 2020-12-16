@@ -2191,7 +2191,7 @@ int driver_init(void)
   // distribute multiprocessing to different cores
   // log level setup
   spdk_log_set_flag("nvme");
-  spdk_log_set_print_level(SPDK_LOG_INFO);
+  spdk_log_set_print_level(SPDK_LOG_DEBUG);
 
   // start rpc server in primary process only
   if (spdk_process_is_primary())
